@@ -16,3 +16,5 @@ ENV BOOT_EMIT_TARGET no
 RUN /usr/bin/boot web -s doesnt/exist repl -e '(System/exit 0)' && rm -rf target
 RUN /usr/bin/boot -v
 RUN /usr/bin/boot -d s3-wagon-private
+
+ADD profile.boot $BOOT_HOME
