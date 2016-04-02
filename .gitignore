@@ -11,3 +11,7 @@ pom.xml.asc
 .idea
 *.iml
 .envrc
+_builds
+_cache
+_projects
+_steps
