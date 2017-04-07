@@ -16,6 +16,6 @@ ENV BOOT_EMIT_TARGET no
 # download & install deps, cache REPL and web deps
 RUN /usr/bin/boot web -s doesnt/exist repl -e '(System/exit 0)' && rm -rf target
 RUN /usr/bin/boot -v
-RUN /usr/bin/boot -d s3-wagon-private
+RUN /usr/bin/boot -d s3-wagon-private:1.2.0
 
 ADD profile.boot $BOOT_HOME
